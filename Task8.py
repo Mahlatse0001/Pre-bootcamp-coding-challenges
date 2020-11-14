@@ -1,21 +1,22 @@
-def my_time():
-    x = int(input("Enter number:"))
-    a = int(x / 60)
-    b = x % 60
-    return x,a,b
+num = int(input("Enter number:"))
 
-x,a,b = my_time()
-if x < 60:
-    print(str(x) + " minutes")
-elif x % 60 == 0 and a < 2:
-    print(str(a) + " hour")
-elif x % 60 == 0 and a > 2:
-    print(str(a) + " hours")
-elif a < 2 and b < 2:
-    print(str(a) + " hour, " + str(b) + " minute")
-elif a > 1 and b < 2 :
-    print(str(a) + " hours, " + str(b) + " minute")
-elif a < 2:
-    print(str(a) + " hour, " + str(b) + " minutes")
-else:
-    print(str(a) + " hours, " + str(b) + " minutes")
+def my_time(num):
+    hour = int(num / 60)
+    minute = num % 60
+    if num < 60:
+        print(str(num) + " minutes")
+    elif num % 60 == 0 and hour < 2:
+        print(str(hour) + " hour")
+    elif num % 60 == 0 and hour > 2:
+        print(str(hour) + " hours")
+    elif hour < 2 and minute < 2:
+        print(str(hour) + " hour, " + str(minute) + " minute")
+    elif hour > 1 and minute < 2 :
+        print(str(hour) + " hours, " + str(minute) + " minute")
+    elif hour < 2:
+        print(str(hour) + " hour, " + str(minute) + " minutes")
+    else:
+        print(str(hour) + " hours, " + str(minute) + " minutes")
+
+
+my_time(num)

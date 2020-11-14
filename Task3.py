@@ -1,11 +1,11 @@
-def my_function():
-    a = int(input("Enter 1st number:"))
-    b = int(input("Enter 2nd number:"))
-    c = a + b
+num1 = int(input("Enter 1st number:"))
+num2 = int(input("Enter 2nd number:"))
 
-    if a == 65 or b == 65 or c == 65:
+def my_numChecker(num1,num2):
+    total = num1 + num2
+    if num1 == 65 or num2 == 65 or total == 65:
         return True
     else:
         return False
 
-print(my_function())
+print(my_numChecker(num1,num2))

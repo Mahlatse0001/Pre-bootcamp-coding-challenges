@@ -1,10 +1,11 @@
-def common():
-    word1 = input("Enter 1st word:")
-    word2 = input("Enter 2nd word:")
+word1 = input("Enter 1st word:")
+word2 = input("Enter 2nd word:")
+print("Common letters:", end=" ")
+
+def common(word1,word2):
     c = list(word1)
-    print("Common letters:", end=" ")
     for x in word2:
         if x in c:
             print(x, end=', ')
 
-common()
+common(word1,word2)

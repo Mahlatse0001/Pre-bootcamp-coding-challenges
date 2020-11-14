@@ -1,13 +1,14 @@
-def my_func():
-    a = int(input("Enter 1st number:"))
-    b = int(input("Enter 2nd number:"))
-    c = a + b
-    if  a == 3 or b == 3:
-        if '3' in str(c):
+num1 = int(input("Enter 1st number:"))
+num2 = int(input("Enter 2nd number:"))
+
+def my_checker(num1,num2):
+    total = num1 + num2
+    if  num1 == 3 or num2 == 3:
+        if '3' in str(total):
             return True
         else:
             return False
     else:
         return False
 
-print(my_func())
+print(my_checker(num1,num2))
