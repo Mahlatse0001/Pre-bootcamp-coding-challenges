@@ -2,12 +2,16 @@ num1 = int(input("Enter 1st number:"))
 num2 = int(input("Enter 2nd number:"))
 num3 = int(input("Enter 3rd number:"))
 
-def my_max(num1,num2,num3):
+def max_num(num1,num2,num3):
+    max = 0
     if num1 >= num2 and num1 >= num3:
-        return num1
+        max = num1
+        return max
     elif num2 >= num1 and num2 >= num3:
-        return num2
+        max = num2
+        return max
     else:
-        return num3
+        max = num3
+        return max
 
-print(my_max(num1,num2,num3))
+print(max_num(num1,num2,num3))

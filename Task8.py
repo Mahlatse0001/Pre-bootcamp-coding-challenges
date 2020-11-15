@@ -1,6 +1,6 @@
 num = int(input("Enter number:"))
 
-def my_time(num):
+def time(num):
     hour = int(num / 60)
     minute = num % 60
     if num < 60:
@@ -19,4 +19,4 @@ def my_time(num):
         print(str(hour) + " hours, " + str(minute) + " minutes")
 
 
-my_time(num)
+time(num)
